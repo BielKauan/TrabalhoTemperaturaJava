@@ -1,7 +1,11 @@
+// Aluno: Gabriel Kauan ferreira de souza
+// Sistema de Gerenciamento de Temperaturas Semanais
 
 import java.util.Scanner;
 
 public class GerenciadorTemperaturasSemanais {
+
+// Vetor que armazena as temperaturas dos sete dias da semana.
 
     static double[] temperaturas = new double[7];
     static String[] diasDaSemana ={
@@ -19,6 +23,8 @@ public class GerenciadorTemperaturasSemanais {
         Scanner scanner = new Scanner(System.in);
 
         int opcao;
+
+// Mantém o menu funcionando até o usuário escolher sair do programa.
 
         do{
             System.out.println("\n===== GERENCIADOR DE TEMPERATURAS =====");
@@ -103,6 +109,8 @@ public class GerenciadorTemperaturasSemanais {
     scanner.close();
 }
 
+// Calcula a soma das temperaturas e retorna a média semanal.
+
 static double calcularMediaSemanal(){
 
     double soma = 0;
@@ -113,6 +121,9 @@ static double calcularMediaSemanal(){
     }
     return soma / 7;
 }
+
+// Identifica e exibe os dias maior e menor temperatura da semana.
+
 static void mostrarDiasMaisQuentesEFrios(){
     double maiorTemperatura = temperaturas[0];
     double menorTemperatura = temperaturas[0];
