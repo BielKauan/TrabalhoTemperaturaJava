@@ -4,26 +4,37 @@ Programa desenvolvido em Java para registrar e analisar as temperaturas dos sete
 
 ## Objetivo
 
-O projeto tem como objetivo praticar conceitos de lógica de programação utilizando Java, incluindo vetores, estruturas de repetição, estruturas condicionais, métodos e validação de dados.
+O projeto foi desenvolvido como atividade acadêmica para praticar lógica de programação utilizando Java, incluindo vetores, estruturas de repetição, estruturas condicionais, métodos e validação de dados.
 
 ## Funcionalidades
 
-- Registrar temperaturas de domingo a sábado.
-- Visualizar as temperaturas registradas.
-- Calcular a média semanal.
-- Identificar os dias mais quentes e mais frios.
-- Validar temperaturas entre -20°C e 50°C.
-- Menu interativo com opção de saída.
+- Cadastro das temperaturas dos sete dias da semana.
+- Validação de temperaturas entre -20°C e 50°C.
+- Consulta das temperaturas registradas.
+- Cálculo da média semanal com exibição de duas casas decimais.
+- Identificação dos dias mais quentes e mais frios, incluindo empates.
+- Menu interativo com opções de operação e encerramento.
 
-## Tecnologias
+## Tecnologias utilizadas
 
-- Java
+- Java 25
 - Git
 - GitHub
+- Visual Studio Code
 
-## Status
+## Como executar
 
-Em desenvolvimento.
+Compile o programa:
+
+```bash
+javac -encoding UTF-8 src/GerenciadorTemperaturasSemanais.java
+```
+
+Execute:
+
+```bash
+java -cp src GerenciadorTemperaturasSemanais
+```
 
 ## Autor
 
